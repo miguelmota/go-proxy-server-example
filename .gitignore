@@ -16,3 +16,4 @@
 .strong-pm
 coverage
 data/*.txt
+node_modules
