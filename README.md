@@ -1,6 +1,6 @@
 # go proxy server example
 
-> golang proxy server example with TLS client authentication
+> [golang](https://golang.org/) proxy server example with [TLS client authentication](https://en.wikipedia.org/wiki/Mutual_authentication_
 
 ## Usage
 
@@ -23,6 +23,8 @@ available on `<ip>:8080/proxy`
 find docker ip using `docker-machine ip`
 
 ---
+
+## Generating certs
 
 Creating a new CA
 
@@ -52,25 +54,25 @@ openssl x509 -in ca.crt -text
 
 Generate a new certificate
 
-First, create private key
+1. create private key
 
 ```bash
 openssl genrsa -out example.com.key 1024
 ```
 
-Second, create a new certificate signing request with private key
+2. create a new certificate signing request with private key
 
 ```bash
 openssl req -new -key example.com.key -out example.com.csr
 ```
 
-Lastly, sign certificate signing request with certificate authority private key and cert
+3. sign certificate signing request with certificate authority private key and cert
 
 ```bash
 openssl ca -in example.com.csr -cert ca.crt -keyfile ca.key -out example.com.crt
 ```
 
-Check contents of certificate
+4. Check contents of certificate
 
 ```bash
 openssl x509 -in example.com.crt -text
