@@ -1,6 +1,6 @@
 # go proxy server example
 
-> [golang](https://golang.org/) proxy server example with [TLS client authentication](https://en.wikipedia.org/wiki/Mutual_authentication_
+> [golang](https://golang.org/) proxy server example with [TLS client authentication](https://en.wikipedia.org/wiki/Mutual_authentication)
 
 ## Usage
 
