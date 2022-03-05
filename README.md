@@ -15,7 +15,7 @@ Docker run
 
 ```bash
 docker build -t go_basic .
-docker run -p 8080:8000 go_basic --follow
+docker run --rm -p 8080:8000 go_basic
 ```
 
 available on `<ip>:8080/proxy`
