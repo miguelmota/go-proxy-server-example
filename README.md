@@ -82,4 +82,4 @@ openssl x509 -in example.com.crt -text
 
 # License
 
-MIT
+[MIT](LICENSE)
