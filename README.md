@@ -14,8 +14,8 @@ go build main.go
 Docker run
 
 ```bash
-docker build -t go_basic .
-docker run --rm -p 8080:8000 go_basic
+docker build -t go-proxy .
+docker run --rm -p 8080:8000 go-proxy
 ```
 
 available on `<ip>:8080/proxy`
