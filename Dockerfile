@@ -2,10 +2,7 @@ FROM golang
 
 EXPOSE 8000
 
-ENV APP_PATH=/go/src/app/
+COPY ./ ./
+RUN go build -v -o /usr/local/bin/app main.go
 
-ADD . /go/src/app
-RUN go install app
-
-WORKDIR /go/src/app
-ENTRYPOINT /go/bin/app
+CMD ["app"]
